@@ -1,0 +1,522 @@
+/* ***************************** */
+/* First section */
+.home{
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.656),rgba(0, 0, 0, 0.656)) ,url(../media/bg.jpeg);
+    background-position:top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.home li a{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+.navbar-brand{
+    font-family: 'Montserrat', sans-serif;
+} 
+.home-cont{
+    font-family: 'Montserrat', sans-serif;
+}
+.home-cont i{
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.312);
+    line-height: 2.4;
+    border-radius: 50%;
+    color: white;
+}
+.home-cont h1::after{
+    content:"|";
+    animation: typing 2.5s infinite;
+    font-weight: 400;
+}
+@keyframes typing {
+
+    0%{
+        content: "|";
+    }
+    5%{
+        content: "|";
+    }
+    10%{
+        content: "De|";
+    }
+    15%{
+        content: "Dev|";
+    }
+    20%{
+        content: "Deve|";
+    }
+    25%{
+        content: "Devel|";
+    }
+    30%{
+        content: "Develo|";
+    }
+    35%{
+        content: "Develop|";
+    }
+    40%{
+        content: "Develope|";
+    }
+    45%{
+        content: "Developer|";
+    }
+    50%{
+        content: "Developer|";
+    }
+    55%{
+        content: "Developer|";
+    }
+    60%{
+        content: "Develope|";
+    }
+    65%{
+        content: "Develop|";
+    }
+    70%{
+        content: "Develo|";
+    }
+    75%{
+        content: "Devel|";
+    }
+    80%{
+        content: "Deve|";
+    }
+    85%{
+        content: "Dev|";
+    }
+    90%{
+        content: "De|";
+    }
+    95%{
+        content: "D|";
+    } 
+    100%{
+        content: "|";
+    }  
+}
+.nav-link{
+    padding: 0 !important;
+    position: relative;
+}
+.nav-link::before{
+    content:"";
+    width: 0%;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: width 0.5s;
+}
+.nav-link:hover::before{
+    width: 100%;
+}
+/*-----------------------------------------------------------------*/
+/* Second section */
+.about{
+    margin:50px 0px;
+}
+.about h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+}
+.about p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+.progress-bar{
+    width: 100%;
+    height: 25px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.181) inset;
+}
+.progress-line{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    border-radius: 5px;
+}
+.progress-line h5{
+    margin: 0%;
+    font-size:12px ;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+.pl2{
+    width: 80%;
+}
+.pl3{
+    width: 90%;
+}
+.about-but1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    border: solid #212529 1px;
+    transition: all 0.5s;
+}
+.about-but1:hover{
+    background-color :white !important;
+    color:#212529BF !important;
+}
+.about-but2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    border: solid #212529 1px;
+    transition: all 0.5s;
+}
+.about-but2:hover{
+    background-color: #212529 !important;
+    color: white !important;
+}
+.about img{
+    position: relative; 
+    /* layerلنفسها عشان تبان فوق ال */
+    z-index: 100;
+}
+.layer-dots{
+    width:76%;
+    height: 80%;
+    background: url(../media/dots.png);
+    position: absolute;
+    /* هتكون بالنسبة لل الاب الكبير عشان تيجي في مساحة البادنج الفاضية */ 
+    bottom:-30px;
+    left: 0;
+}
+/*-----------------------------------------------------------------*/
+/*Third section */
+.services{
+    background-color: #F7F7F7;
+    padding: 80px 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+.back-layer-dots{
+    background: url(../media/dots.png);
+    width: 18%;
+    height: 25px;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+.services h3{
+    position: relative;
+    z-index: 110;
+}
+.services p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+.services i{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #F6F6F6;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    margin-left: 50%;
+}
+.serv-item:hover i{
+    background-color: #212529;
+    color: white;
+}
+/*-----------------------------------------------------------------*/
+/*Fourth section */
+.works{
+    padding: 80px 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+.works h3{
+    position: relative;
+    z-index: 110;
+}
+#works .nav-link{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #212529 !important;
+}
+#works .nav-item .active{
+    color: #212529 !important;
+    position: relative;
+}
+#works .nav-item .active::before{
+    content:"";
+    width: 100%;
+    height: 2px;
+    background-color: #212529;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.port-layer{
+    position: absolute;
+    top: 15px;
+    bottom: 6px;
+    right: 6px;
+    left: 6px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.port-layer:hover{
+    opacity: 1;
+    top: 6px;
+}
+.port-layer h6{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: all 0.5s;
+    margin-bottom: 35px;
+}
+.port-layer:hover h6{
+    margin-bottom: 10px;
+}
+.port-layer i{
+    width: 30px;
+    height: 30px;
+    background-color: #212529;
+    color: white;
+    line-height: 2.2;
+    border-radius: 50%;
+    font-size: 14px;
+    transition: all 0.5s;
+    border: 1px solid #212529;
+}
+.port-layer i:hover{
+    background-color: white;
+    color: #212529;
+}
+/*-----------------------------------------------------------------*/
+/*Fifth section */
+.clients{
+    background-color: #F7F7F7;
+    padding: 80px 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+.clients h3{
+    position: relative;
+    z-index: 110;
+}
+#clients .back-layer-dots{
+    background: url(../media/dots.png);
+    width: 26%;
+    height: 30px;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+.carousel-item img{
+    width: 12% !important;
+    border-radius: 50% !important;
+}
+.edit-but button{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+    background-color: #869791 !important;
+}
+.carousel-item p{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
+}
+.carousel-item h6{
+    font-size: 16px;
+    font-weight: 600;
+}
+.carousel-item h5{
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+/*-----------------------------------------------------------------*/
+/*Section Six*/
+.numbers{
+    padding: 80px 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+.numbers i{
+    font-size: 25px;
+}
+.numbers h3{
+    font-size: 25px;
+    font-weight: 900;
+}
+.numbers p{
+    font-size: 15px;
+    font-weight: 600;
+}
+/*-----------------------------------------------------------------*/
+/*Section Seven*/
+.team{
+    background-color: #F7F7F7;
+    padding: 80px 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+.team h3{
+    position: relative;
+    z-index: 110;
+}
+.team-item{
+    background-color: #5A5A5A;
+    border-radius: 0px 0px 5px 5px;
+}
+.team h4{
+    font-size: 25px;
+    font-weight: 500;
+}
+.team h5{
+    font-size: 20px;
+    font-weight: 700;
+}
+.rotate-layer{
+    background-color: rgba(255, 255, 255, 0.897) ;
+    position: absolute;
+    top: 6px;
+    bottom: 6px;
+    right: 6px;
+    left: 6px;
+    transform: rotateY(180deg) scale(0.6);
+    opacity: 0;
+    transition: all 0.5s;
+}
+.team-item:hover .rotate-layer{
+    transform: rotateY(0deg);
+    transform: scale(1);
+    opacity: 1;
+}
+.rotate-layer i{
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 2;
+    border-radius: 50%;
+    border: 1px solid black;
+    transition: all 0.5s;
+}
+.rotate-layer i:hover{
+    color: black;
+    background-color: white;
+}
+.zoom-image img{
+    transition: all 0.5s;
+}
+.zoom-image:hover img{
+    transform: scale(1.2);
+}
+/*-----------------------------------------------------------------*/
+/*Section Eight*/
+.contact{
+    background-color: white;
+    padding: 80px 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+.contact h3{
+    position: relative;
+    z-index: 110;
+}
+#contact h3{
+    font-size: 16px;
+    font-weight: 700;
+}
+#contact p{
+    font-family: 'Poppins', sans-serif;
+}
+#contact i{
+    font-size: 25px;
+    background-color:#F4F4F4;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 2.4;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+#contact .con-item:hover i{
+    background-color: #212529;
+    color: white;
+}
+#contact input{
+    background-color: #F4F4F4;
+    border: none;
+    padding: 9px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+input:focus{
+    outline: 0;
+}
+#contact textarea{
+    background-color: #F4F4F4;
+    border: none;
+    padding: 9px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+textarea:focus{
+    outline: 0;
+}
+/*-----------------------------------------------------------------*/
+/*Section Nine*/
+.footer{
+    background-color:#1C1C1C;
+    padding: 30px 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+}
+/* THE END */
+
+/*-----------------------------------------------------------------*/
+/* EXTRAAA = HAS - HAS NOT - TARGET*/
+body:has(.home:target) .home-link::before{
+    width: 100%;
+}
+body:has(.about:target) .about-link::before{
+    width: 100%;
+}
+body:has(.services:target) .services-link::before{
+    width: 100%;
+}
+body:has(.works:target) .works-link::before{
+    width: 100%;
+}
+body:has(.clients:target) .clients-link::before{
+    width: 100%;
+}
+body:has(.team:target) .team-link::before{
+    width: 100%;
+}
+body:has(.contact:target) .contact-link::before{
+    width: 100%;
+}
+/*  */
+/* body:not(:has(:target)) .home-link::before{
+    width: 100%;
+} */
+/* ----------------------------------------------- */
+/* EXTRAAA = SCROLL-SPY*/
+#home .active::before{
+    content:"";
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+/* ----------------------------------------------- */

@@ -1,0 +1,72 @@
+/* <!-- For Tablets --> */
+@media screen and (max-width:979px) and (min-width:768px) {
+
+/* First section */
+.nav-link:hover::before{
+    width: 0%;
+}
+.navbar-nav {
+    background-color: rgb(255, 255, 255);
+    padding: 30px 0px ;
+}
+.nav-link{
+    color: #000000 !important;
+    margin: 10px 0px;
+    text-align: center;
+}
+/* Fifth section */
+.carousel-item img{
+    width: 30% !important;
+    border-radius: 50% !important;
+}
+}
+/* /* ------------------------------------------------------------------------------------------------------- */
+
+/* <!-- For Large Phones --> */
+@media screen and (max-width:767px) and (min-width:501px) {
+
+/* First section */
+.nav-link:hover::before{
+    width: 0%;
+}
+.navbar-nav {
+    background-color: rgb(255, 255, 255);
+    padding: 30px 0px ;
+}
+.nav-link{
+    color: #000000 !important;
+    margin: 10px 0px;
+    text-align: center;
+}
+/* Fifth section */
+.carousel-item img{
+    width: 40% !important;
+    border-radius: 50% !important;
+}
+}
+/* /* ------------------------------------------------------------------------------------------------------- */
+
+/* <!-- For Small Mobiles -->  */
+@media screen and (max-width:500px) {
+    
+/* First section */
+.nav-link:hover::before{
+    width: 0%;
+}
+.navbar-nav {
+    background-color: rgb(255, 255, 255);
+    padding: 30px 0px ;
+}
+.nav-link{
+    color: #000000 !important;
+    margin: 10px 0px;
+    text-align: center;
+}
+/* Fifth section */
+.carousel-item img{
+    width: 30% !important;
+    border-radius: 50% !important;
+}
+}
+/* ------------------------- */
+/* THE END */
